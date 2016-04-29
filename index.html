@@ -14,7 +14,7 @@
             <input type="submit"/>
             <script type="text/javascript">
                 "use strict";
-                (function() {
+                (function(dest) {
                     function createOption(i) {
                         var el=document.createElement('option');
                         el.value=el.textContent=i;
@@ -25,11 +25,11 @@
                             return createOption(i+beg);
                         })
                     }
-                    document.querySelectorAll(".one-to-nineninenine").forEach(function(e) {
+                    dest.forEach(function(e) {
                         var appChild = e.appendChild.bind(e);
                         listOfOptions(1,999).map(appChild);
                     })
-                }).call()
+                })(document.querySelectorAll(".one-to-nineninenine"))
             </script>
         </section>
     </body>
