@@ -3,6 +3,13 @@ UX Phone Picker
 
 Finally, all the best phone pickers - implemented in one place.
 
+Inspiration
+==
+
+![multiple solutions for picking the phone number](inspiration.gif)
+
+> Author of this pic! Only if you come to see this text, please contact me, so I can credit you!
+
 > "Feel inspired and inspire others"
 said once a wise man
 
