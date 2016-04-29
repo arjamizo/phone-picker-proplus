@@ -14,4 +14,12 @@ Link to **demo** in the repository description.
 Disclaimer
 ==
 
-This is programmers/designers humour. 
+This is programmers/designers humour.
+
+The true reason for this project
+==
+
+Since I feel that I come, originally, from hackmes community,
+the true reason will stay a little bit hidden.
+
+    Q2hlY2sgd2lraSBlbnRyeSBuYW1lZCAiUmVhc29uIg==
