@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="$1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Phone number pickers</title>
+    </head>
+    <body>
+        <section>
+            <select class="one-to-nineninenine"></select>
+            <select class="one-to-nineninenine"><select>
+            <select class="one-to-nineninenine"><select>
+            <input type="submit"/>
+            <script type="text/javascript">
+                "use strict";
+                (function() {
+                    function createOption(i) {
+                        var el=document.createElement('option');
+                        el.value=el.textContent=i;
+                        return el;
+                    }
+                    function listOfOptions(beg, end) {
+                        return Array(end-beg+1).join(' ').split(' ').map(function(e,i) {
+                            return createOption(i+beg);
+                        })
+                    }
+                    document.querySelectorAll(".one-to-nineninenine").forEach(function(e) {
+                        var appChild = e.appendChild.bind(e);
+                        listOfOptions(1,999).map(appChild);
+                    })
+                }).call()
+            </script>
+        </section>
+    </body>
+</html>
