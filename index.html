@@ -15,6 +15,7 @@
             <script type="text/javascript">
                 "use strict";
                 (function(dest) {
+                    dest = Array.prototype.slice.call(dest, 0);
                     function createOption(i) {
                         var el=document.createElement('option');
                         el.value=el.textContent=i;
