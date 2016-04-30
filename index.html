@@ -54,5 +54,20 @@
                 })(document.querySelector(".phone-nr"), document.querySelector(".phone-plus"))
             </script>
         </section>
+        <section>
+            <input type="range" min="0" max="99999999999"/>
+            <span></span>
+            <script type="text/javascript">
+                (function(range, span){
+                    console.log(range)
+                    function setText(ev) {
+                        return span.textContent=ev.target&&ev.target.value || ev;
+                    }
+                    setText(range&&range.value || 0);
+                    range.addEventListener('change', setText);
+                    range.addEventListener('input', setText);
+                }).apply({}, ["input[type=range]", "input[type=range]+span"].map(e=>document.querySelector(e)));
+            </script>
+        </section>
     </body>
 </html>
